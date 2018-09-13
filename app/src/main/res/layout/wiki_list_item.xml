@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp">
+
+    <RelativeLayout
+        android:id="@+id/news_list_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/issue_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:text="Issue ID:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/issue_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/issue_id_label"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/issue_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/issue_id_label"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:text="Issue Title:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/issue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_below="@id/issue_id_label"
+            android:layout_toRightOf="@id/issue_title_label"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/issue_pull_request_link_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/issue_title"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:text="Pull Request Link:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/issue_pull_request_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/issue_pull_request_link_label"
+            android:accessibilityTraversalBefore="@id/issue_title_label"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            android:ellipsize="end"
+            android:maxLines="2" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
